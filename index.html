@@ -147,8 +147,8 @@
                     </p>
                 </div>
             </div>
-            <a href="#areas">
-                <img src="assets/img/arrow-down.svg" class="arrow-down" alt="Seta para baixo">
+            <a href="#areas" class="btn__down">
+                <img src="assets/img/arrow-down.svg" class="arrow__down" alt="Seta para baixo">
             </a>
         </div>
     </main>
@@ -364,7 +364,6 @@
             loop: false,
             nav: false,
             dots: true,
-            stagePadding: 20,
 
             responsive: {
                 0: {
@@ -376,13 +375,14 @@
 
                 720: {
                     loop: true,
-                    items: 1,
-                    stagePadding: 150,
+                    items: 3,
+                    stagePadding: 60,
                 },
                 
                 1280: {
-                    items: 1.8,
+                    items: 4,
                     margin: 24,
+                    stagePadding: 0,
                 }
             }
         });
