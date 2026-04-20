@@ -8,9 +8,8 @@
 
     .wrapper {
         max-width: 1025px;
-        margin-left: auto;
-        margin-right: 28px;
-        padding: 264px 16 90px 16px;
+        margin: 0 auto;
+        padding: 264px 16px 128px 16px;
         display: flex;
         justify-content: center;
         gap: 0;
@@ -19,7 +18,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 60px;
+            gap: 96px;
 
             .heading {
                 width: 414px;
@@ -58,17 +57,25 @@
                     }
                 }
             }
-        }
+        }       
+    }
 
-        .btn-down {
+    .button {
+        width: 100%;
+        padding-bottom: 90px;
+
+        .btn__down {            
             margin: 0 auto;
             width: fit-content;
+            
 
             .arrow__down {
                 width: fit-content;
             }
         }
     }
+
+     
 
     @media (max-width: @tablet) {
         background-image: url('../img/banner-mobile.png');

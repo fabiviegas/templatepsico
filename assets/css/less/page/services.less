@@ -19,6 +19,7 @@
             line-height: 133%; /* 26.6px */
             letter-spacing: 4px;
             margin-bottom: 20px;
+            text-transform: uppercase;
         }
 
         .subtitle {
@@ -33,14 +34,20 @@
 
         .owl-carousel.owl-theme.services__carousel {
 
+            .owl-dots {
+                display: none;
+            }
+
             .card__service {
                width: 278px;
                height: 247px;
                background-color: @branco;
                display: flex;
+               flex-direction: column;
                justify-content: center;
                align-items: center;
-               padding: 30px 29px 35px 29px;
+               padding: 30px 24px 35px 24px;
+               border-radius: 4px;
                
                .icon {
                     width: fit-content;

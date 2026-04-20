@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme-color" content="#FF8C39">
 
-    <title>Fabiane Viegas · Web Designer</title>
+    <title>Template Advocacia</title>
 
     <!-- Descrição da página -->
     <meta name="description"
@@ -146,9 +146,11 @@
                         Acreditamos que cada caso merece atenção dedicada e <span>soluções jurídicas inteligentes</span>, transformando desafios legais em <span>resultados concretos e confiáveis</span>.
                     </p>
                 </div>
-            </div>
+            </div>            
+        </div>
+        <div class="button">
             <a href="#areas" class="btn__down">
-                <img src="assets/img/arrow-down.svg" class="arrow__down" alt="Seta para baixo">
+                    <img src="assets/img/arrow-down.svg" class="arrow__down" alt="Seta para baixo">
             </a>
         </div>
     </main>
@@ -278,11 +280,9 @@
                     </div>
                 </div>
             </div>
-    </section>
+    </section>  
 
-  
-
-    <section class="cta-1">
+    <section class="page__cta">
         <div class="wrapper">
             <div class="content">
                 <h2 class="title">Agende sua consulta</h2>
@@ -332,11 +332,26 @@
                         </a>
                     </div>
                 </div>
+
+                <div class="address">
+                    <p class="address__text">
+                        Av. Paraguassú, nº 211<br>
+                        sala 9 - Edificio Souza<br>
+                        Goiânia - GO
+                    </p>
+
+                    <a href="#" class="link__location">
+                        Como chegar >
+                    </a>
+                </div>
             </div>
 
 
             <div class="footer__copyrights">
-                <p class="copyright">F. Viegas Web Designer 2025. Todos os direitos reservados.</p>
+                <p class="copyright">2025 © Oliveria e Souza Advogados Associados. Todos os direitos reservados.</p>
+                <a href="https://www.fabianeviegas.com.br" class="logo__dev" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/img/logo-dev.svg" class="logo__img" alt="Fabiane Viegas Web Designer">
+                </a>
             </div>
 
         </div>
@@ -388,34 +403,24 @@
         });
 
         $('.about__carousel').owlCarousel({
-            loop: false,
-            nav: false,
+            loop: true,
+            nav: true,
             dots: true,
-            stagePadding: 20,
+            navText: [
+                "<img src='assets/img/chevron-left.svg' alt='Anterior'>",
+                "<img src='assets/img/chevron-right.svg' alt='Próximo'>"
+            ],
 
             responsive: {
                 0: {
                     items: 1,
-                    margin: 15,
-                    loop: true,
-                    stagePadding: 50,
-                },
-
-                720: {
-                    loop: true,
-                    items: 1,
-                    stagePadding: 150,
-                },
-                
-                1280: {
-                    items: 1.8,
-                    margin: 24,
+                    margin: 10,
                 }
             }
         });
 
         $('.team__carousel').owlCarousel({
-            loop: false,
+            loop: true,
             nav: false,
             dots: true,
             stagePadding: 20,
@@ -425,18 +430,18 @@
                     items: 1,
                     margin: 15,
                     loop: true,
-                    stagePadding: 50,
+                    stagePadding: 30,
                 },
 
                 720: {
                     loop: true,
-                    items: 1,
-                    stagePadding: 150,
+                    items: 3,
+                    stagePadding: 60,
                 },
                 
                 1280: {
-                    items: 1.8,
-                    margin: 24,
+                    items: 3,
+                    stagePadding: 0,
                 }
             }
         });
